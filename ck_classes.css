@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* Style the Cards */
+
+.row {padding-left: 70px;}
+
+.card-text1 {color: #986C16;}
+
+.card-text2 {color: #008400;}
+
+.card-text3 {color: #E1185C;}
+
+.card-text4 {color: #324A4D;}
+
+h3 {
+    color: #002e66;
+    font-size: 42px;
+}
+
+article#school {font-size: 24px;}

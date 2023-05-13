@@ -4,23 +4,53 @@
 
 body {
 	font-family: "Trirong", serif;
+    font-size: 22px;
+    background-color: ghostwhite;
 }
 
 /* List Styles */
 
+ul.navbar {
+    list-style-type: none;
+    color: white;
+}
+
+.nav-item:hover {
+  color: hotpink;
+}
+
 /* Footer Styles */
 
 footer {
-    background-color: cyan;
+    background-color: dodgerblue;
     color: black;
     clear: left;
     height: 12em;
     line-height: 2em;
     font-size: 20px;
-    grid-row: 8;
-    grid-column: 1/-1;
 }
 
-footer a:link {text-decoration: none;}
+footer a:link {
+    text-decoration: none;
+    color: aliceblue;
+}
 
 footer a:hover, a:active {color: magenta;}
+
+footer img {
+    width: 10%;
+    height: 40%;
+    float: right;
+}
+
+/* Button Styles */
+
+button.btn.btn-primary2 {
+    background-color: red;
+    color: white;
+}
+
+div.modal-footer > button.btn.btn-primary > a {
+    color: whitesmoke;
+    text-decoration: none;
+}

@@ -3,18 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>Joseph Torrez</title>
-    <link href="main.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="main.css" rel="stylesheet" />
+	<link href="ck_experience.css" rel="stylesheet" />
+	<script src="ck_experienceScript.js" defer></script>
 </head>
 
 <body>
+    
     <div class="container text-center">
-		<div class="row">
+		<div class="row1">
 			<div class="col">
 				<header>
-					<h1>My Life</h1>
-					<nav class="nav">
+					<h1>College Knowledge</h1>
+					<ul class="navbar navbar-dark bg-dark">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
 						</li>
@@ -26,16 +29,120 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+							<a class="nav-link" href="resume.html">Resume</a>
 						</li>
+                    </ul>
 				</header>
 			</div>
 		</div>
-    
+        
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <h2 style="text-align:center">Things I Learned in Cerritos</h2>
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="python.png" alt="" style="width:100%">
+                <div class="text">Python</div>
+            </div>
 
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="java.png" alt="" style="width:100%">
+                <div class="text">Java</div>
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <img src="c++.png" alt="" style="width:100%">
+                <div class="text">C++</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="html.png" alt="" style="width:100%">
+                <div class="text">HTML & CSS</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <img src="sql.png" alt="" style="width:100%">
+                <div class="text">Structured Query Language (SQL)</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="operatingSystems.png" alt="" style="width:100%">
+                <div class="text">Windows, Linux, and MacOS</div>
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <img src="computerInfo.png" alt="" style="width:100%">
+                <div class="text">Hardware + Software Information</div>
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>    
+    </div>
     
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+      <div class="myModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            <img src="fc_ad.png" alt="" />
+                            UNLIMITED TIME OFFER!
+                        </h5>
+                        <!-- Button Close
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        -->
+                    </div>
+                    <div class="modal-body">
+                        <p>Want some free ice cream?<br>Visit our website
+                        and use the promo code "HTML" at the checkout for 
+                        2 free quarts of ice cream!</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            No Thanks
+                        </button>
+                        <a href="https://cookies-t.github.io/Project2/" class="btn btn-primary" role="button">
+                            Buy Ice Cream
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
-        <p>Email: <a href="mailto:jtorrez@example.edu">jtorrez@example.edu</a></p>
-        <p>Last updated on March 7th, 2023</p>
+		<p>Email: <a href="mailto:jtorrez@example.edu">jtorrez@example.edu</a></p>
+        <p>Last updated on May 13th, 2023</p>
+        
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary2" data-bs-toggle="modal" data-bs-target="#myModal">
+            Ice Cream Offer
+        </button>
+        
+        <img src="college.png" alt="">
     </footer>
 </body>
 </html>
